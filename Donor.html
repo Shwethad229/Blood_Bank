@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<h2>Donor Form</h2>
+<div class="container">
+    <form action="Donor1.php" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="Name">Donor_name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Name"  name="Name" placeholder="Your name..">
+      </div>
+    </div>
+<div class="row">
+      <div class="col-25">
+        <label for="B_type">Blood_type</label>
+      </div>
+      <div class="col-75">
+        <select id="B_type" name="B_type">
+          <option value="A+ve">A+ve</option>
+          <option value="A-ve">A-ve</option>
+          <option value="B+ve">B+ve</option>
+          <option value="B-ve">B-ve</option>
+          <option value="O+ve">O+ve</option>
+          <option value="O-ve">O-ve</option>
+          <option value="AB+ve">AB+ve</option>
+          <option value="AB-ve">AB-ve</option>
+        </select>
+      </div>
+    </div>
+<div class="row">
+      <div class="col-25">
+        <label for="Gender">Gender</label>
+      </div>
+      <div class="col-75">
+        <select id="Gender" name="Gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Phno">Phone Number:</label>
+      </div>
+      <div class="col-75">
+      <input type="text" id="Phno" name="Phno" >
+      </div>
+    </div>
+<div class="row">
+      <div class="col-25">
+       <label for="Weight">Weight</label>
+      </div>
+      <div class="col-75">
+       <input type="Weight" id="Weight" name="Weight" min="1" max="80">
+      </div>
+    </div>
+<div class="row">
+      <div class="col-25">
+        <label for="Address">Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Address" name="Address" placeholder="Address">
+      </div>
+    </div>
+<div class="row">
+      <div class="col-25">
+        <label for="Blood Pressure">BP</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="BP" name="BP" placeholder="BP">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Doctors Name</label>
+      </div>
+      <div class="col-75">
+        <select id="name" name="name">
+          <option value="Dr.Anish Pandey">Dr.Anish Pandey</option>
+          <option value="Dr.Arun S">Dr.Arun S</option>
+          <option value="Ram">Ram</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Bb_name">Blood_bank name</label>
+      </div>
+      <div class="col-75">
+        <select id="Bb_name" name="Bb_name">
+          <option value="Apollo">Apollo</option>
+          <option value="FORTIS">FORTIS</option>
+          <option value="Colomia asia">Colombia asia</option>
+        </select>
+      </div>
+    </div>
+<div class="row">
+      <div class="col-25">
+        <label for="DOB">DOB</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="DOB" name="DOB">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Registered_date">Registered_date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="Registered_date" name="Registered_date">
+      </div>
+    </div>
+    <tr>
+      <td colspan="2" align="center" ><input type="submit" name="save" value="Submit" style="font-size:20px"></td>
+  </tr>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+body
+{
+    background-image: linear-gradient(to bottom, rgba(181, 186, 189, 0.6), rgba(181, 172, 172, 0.6)),url('bloodimage.jpg' );
+    /* background: linear-gradient(#ff0000, #0000ff),url('bloodimg.jpg'); */
+    /* background-repeat:no-repeat; */
+    /* background-image: url('img1.jpg'); */
+    height: 100%;
+    background-size:cover;
+   
+    background-repeat: no-repeat;
+    object-fit: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+h2{
+    text-align: center;
+    margin-top: 200px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    color:black;
+}
+
+p{
+    text-align: center;
+    margin-top: 5px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 45px;
+    color:black;
+}
+
+#Donar{
+    background-color: rgb(77, 77, 137);
+    margin: 5px;
+    /* padding: 15px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+}
+
+#Donar:hover{
+    /* box-shadow: rgb(0, 0, 0); */
+    cursor: pointer;
+}
+
+#Patient{
+    background-color: rgba(77,77,137);
+    
+    margin: 5px;
+    /* padding: 15px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+#Patient:hover{
+    /* box-shadow: rgb(0, 0, 0); */
+    cursor: pointer;
+}
+#Donorview{
+    background-color: rgba(77,77,137);
+    
+    margin: 5px;
+    /* padding: 15px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+#Donorview:hover{
+    /* box-shadow: rgb(0, 0, 0); */
+    cursor: pointer;
+}
+#stock_check{
+    background-color: rgba(77,77,137);
+    
+    margin: 5px;
+    /* padding: 15px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+#stock_check:hover{
+    /* box-shadow: rgb(0, 0, 0); */
+    cursor: pointer;
+}
